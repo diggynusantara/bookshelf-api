@@ -239,20 +239,17 @@ API ini akan menyimpan data buku dengan atribut sebagai berikut:
 
 ## Menjalankan Server
 
-### 1. Konfigurasi server
+### 1. Jalankan server
 
-Dupilkasikan file `.env.example` dan ubah namanya menjadi `.env`. Lalu atur `HOST` dan `PORT` sesuai dengan yang diinginkan.
-
-### 2. Jalankan server
-
-Untuk menjalankan di lingkungan **pengembangan (*development*)**, gunakan perintah:
+Untuk menjalankan secara standar atau di lingkungan **pengembangan (*development*)**, gunakan perintah:
 
 ```bash
-$ npm run start:dev
+$ npm run start atau $ npm run start:dev 
 ```
 
-Untuk menjalankan di lingkungan **produksi (*production*)**, gunakan perintah:
-
-```bash
-$ npm run start:prod
-```
+### 2. Testing dengan Postman
+- Buka aplikasi Postman, lalu klik Import pada workspace.
+- Pilih file dan import semua file yang ada dalam folder BookshelfAPITestCollectionAndEnvironment ke dalam workspace.
+- Jalankan test dengan cara set active pada menu Environments.
+- Lalu buka menu Collections, buka Bookshelf API Test, dan klik Send pada setiap testing yang ingin anda jalankan.
+- Lihat di bagian Response (di bawah), apakah sudah berhasil sesuai yang anda harapkan.
